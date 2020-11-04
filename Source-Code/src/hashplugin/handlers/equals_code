@@ -1,0 +1,12 @@
+if (this == obj)
+	return true;
+if (obj == null)
+	return false;
+if(getClass() != obj.getClass())
+	return false;
+UserCode other = (UserCode) obj;
+if(b!=other.b)
+	return false;
+if(c!=other.c)
+	return false;
+return true;

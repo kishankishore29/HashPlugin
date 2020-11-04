@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Sample Category"
+            id="HashPlugin.commands.category">
+      </category>
+      <command
+            name="Sample Command"
+            categoryId="HashPlugin.commands.category"
+            id="HashPlugin.commands.sampleCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="HashPlugin.commands.sampleCommand"
+            class="hashplugin.handlers.Execution">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="HashPlugin.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="HashPlugin"
+               mnemonic="M"
+               id="HashPlugin.menus.sampleMenu">
+            <command
+                  commandId="HashPlugin.commands.sampleCommand"
+                  id="HashPlugin.menus.sampleCommand"
+                  label="Run"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="HashPlugin.toolbars.sampleToolbar">
+            <command
+                  commandId="HashPlugin.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  id="HashPlugin.toolbars.sampleCommand"
+                  label="Run"
+                  tooltip="HashPlugin">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>
