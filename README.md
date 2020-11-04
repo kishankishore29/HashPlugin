@@ -30,21 +30,21 @@ http://www.vogella.com/tutorials/EclipsePlugin/article.html#install-feature-via-
 ---
 #Examples
  A java class using HashMap to add its own Objects as keys and Integers as values.<br>: 
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/1.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/1.png)<br>
 
 After pressing the run button in the HashPlugin Menu, the user is prompted to choose the hash function to be used to override the default implementation of hashcode():<br>   
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/4.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/4.png)<br>
  
 The next dialog box allows the user to choose the instance variables to be used while hashing(static variables are not included).<br>
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/5.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/5.png)<br>
 
 Next,HashPlugin auto-generates the code for equals() and hashCode(). [ If eclipse does not auto refresh the file,press F5]<br>
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/2.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/2.png)<br>
 
 After equals() and hashCode() have been generated, getStatistics(),summary() and close() can be called.
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/3.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/3.png)<br>
 
 The output generated, when the above code is run has been shown below:<br>
-![alt text](https://github.com/kishan2695/HashPlugin/blob/master/Screenshots/6.png)<br>
+![alt text](https://github.com/kishankishore29/HashPlugin/blob/master/Screenshots/6.png)<br>
 
 
